@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Welcome to the Table Tracker App 🚀, a serverless solution designed to streamline restaurant reservations in Halifax, Nova Scotia. This technical proposal provides an in-depth overview of the architecture, components, and modules incorporated into the project.
+Welcome to the Table Tracker App 🚀, a serverless solution designed to streamline restaurant reservations in Halifax, Nova Scotia.
 
 ## Project Overview
 
