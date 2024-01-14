@@ -1,47 +1,94 @@
-# Table Tracker:
+# Table Tracker - Serverless Data Processing
 
 ## Introduction
 
-Table Tracker is an innovative solution designed to streamline table reservations, customer management, etc.. Leveraging the latest technologies, this platform offers a user-friendly interface and robust functionality to ensure a seamless experience for both customers and administrators.
+Welcome to the Table Tracker App 🚀, a serverless solution designed to streamline restaurant reservations in Halifax, Nova Scotia. This technical proposal provides an in-depth overview of the architecture, components, and modules incorporated into the project.
 
-## Installation
+## Project Overview
 
-Follow these steps to set up the project locally:
+The Table Tracker App aims to deliver an efficient and user-friendly reservation platform for restaurant guests in Halifax. Leveraging the power of Google Cloud Platform (GCP) and Amazon Web Services (AWS) serverless architecture ensures scalability, security, and cost-effectiveness.
 
-## Clone the repository
+## App Components
 
-    git clone https://git.cs.dal.ca/dbhat/csci5410-f23-sdp3.git
+1. **Customer App:** Enables customers to make reservations.
+2. **Partner App:** Empowers restaurants to manage bookings and menus.
+3. **Admin App:** Provides administrators with insightful visualizations.
 
-## Navigate to the frontend directory
+## Key Layers
 
-    cd frontend
+1. **Frontend:** React.js.
+2. **Backend Services:** Serverless functions for reservations, notifications, and analytics in Google Cloud Platform (GCP) and Amazon Web Services (AWS).
+3. **Database:**
+    - Firestore for dynamic content.
+    - AWS DynamoDB for static content.
+    - Amazon S3 for storing restaurant and menu images.
+4. **Authentication:** Firebase Authentication.
+5. **APIs:** Amazon API Gateway or Google API Gateway for RESTful APIs.
 
-## Install dependencies
+## Modules
 
-    npm i
+### Customer App
 
-## Run the development server
+#### 1. Sign Up & Login Module
+- Email and password login.
+- Google Single Sign-On.
 
-    npm run dev
+#### 2. List Restaurants
+- View available restaurants, opening hours, and menus.
 
-## Demo
+#### 3. Reservation Management
+- Book, edit, delete, view reservations.
+- Book, edit, delete, view menu for a reservation.
 
-Explore the live demo of the project:
+#### 4. Chatbot
+- Interact with a chatbot for restaurant information, menu details, and reservations.
 
-### _Customer and Partner App_ : https://sdp3-app-sprint2-ego5ocsnya-uc.a.run.app/
+#### 5. Notifications
+- Receive notifications about offers and reservation updates.
 
-### _Admin App_: https://sdp3-app-admin-ego5ocsnya-uc.a.run.app/
+### Partner App
 
-## Team Members and Features
+#### 1. Sign Up & Login Module
+- Email and password login.
+- Google Single Sign-On.
 
-**Rashmi**: Sign Up & Login Module
+#### 2. Restaurant Details
+- Add availability, opening and closing hours, and menus.
+- Manage tables and reservations.
 
-**Preeti**: List Restaurants
+#### 3. Reservation Management
+- View, edit, delete reservations.
 
-**Dheeraj**: Book, edit, delete, view a reservation
+#### 4. Menu Management
+- Edit, delete, and view menus.
+- Add prices and offers.
 
-**Arihant**: Book, edit, delete, view menu for a reservation
+#### 5. Holistic View
+- Visualize daily, weekly, and monthly reservations.
 
-**Gauravsinh**: Chatbot
+#### 6. Chatbot
+- Interact with a chatbot for booking information and menu details.
 
-**Riya**: Notifications
+#### 7. Notifications
+- Receive notifications about new reservations and updates.
+
+### Admin App
+
+#### 1. Visualizations
+- Top 10 restaurants and food items.
+- Peak order periods.
+- Top 10 customers.
+- Filtered reviews.
+
+## Data Storage and Security
+
+- Reservation data stored securely in Firestore.
+- Role-based access control for data privacy.
+- Encryption for Personally Identifiable Information (PII).
+- Firebase Authentication for secure user access.
+
+## Development Environment
+
+- Git for collaborative development.
+- CI/CD pipelines.
+- Regular logging and weekly commits to ensure project progress and quality.
